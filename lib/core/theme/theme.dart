@@ -1,14 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_sweet_shop_app_ui/core/theme/colors.dart';
 import 'package:flutter_sweet_shop_app_ui/core/theme/typography.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class AppTheme {
   //
   // Light theme
   //
-  static final light = ThemeData.light().copyWith(
+  static final light = ThemeData(
+    fontFamily: GoogleFonts.montserrat().fontFamily,
+  ).copyWith(
     extensions: [_lightAppColors, AppTypography.light],
-    primaryColor: _lightAppColors.primary,
     colorScheme: ColorScheme.fromSeed(
       seedColor: _lightAppColors.primary,
       brightness: Brightness.light,
@@ -16,12 +18,12 @@ class AppTheme {
     navigationBarTheme: NavigationBarThemeData(
       backgroundColor: _lightAppColors.white,
       labelTextStyle: WidgetStateProperty.resolveWith((
-        Set<WidgetState> states,
-      ) {
+          Set<WidgetState> states,
+          ) {
         final Color color =
-            states.contains(WidgetState.selected)
-                ? _lightAppColors.primary
-                : _lightAppColors.black;
+        states.contains(WidgetState.selected)
+            ? _lightAppColors.primary
+            : _lightAppColors.black;
         return TextStyle(color: color);
       }),
     ),

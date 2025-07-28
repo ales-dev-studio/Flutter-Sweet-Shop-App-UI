@@ -362,6 +362,9 @@ class $AssetsIconsGen {
   /// File path: assets/icons/receipt-square.svg
   String get receiptSquare => 'assets/icons/receipt-square.svg';
 
+  /// File path: assets/icons/receipt.svg
+  String get receipt => 'assets/icons/receipt.svg';
+
   /// File path: assets/icons/receive-square-2.svg
   String get receiveSquare2 => 'assets/icons/receive-square-2.svg';
 
@@ -511,6 +514,9 @@ class $AssetsIconsGen {
 
   /// File path: assets/icons/star.svg
   String get star => 'assets/icons/star.svg';
+
+  /// File path: assets/icons/star_filled.svg
+  String get starFilled => 'assets/icons/star_filled.svg';
 
   /// File path: assets/icons/tag-user.svg
   String get tagUser => 'assets/icons/tag-user.svg';
@@ -684,6 +690,7 @@ class $AssetsIconsGen {
     radar,
     ranking,
     receiptSquare,
+    receipt,
     receiveSquare2,
     receiveSquare,
     received,
@@ -734,6 +741,7 @@ class $AssetsIconsGen {
     star1,
     starSlash,
     star,
+    starFilled,
     tagUser,
     toggleOffCircle,
     toggleOff,
