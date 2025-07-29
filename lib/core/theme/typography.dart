@@ -95,9 +95,9 @@ class AppTypography extends ThemeExtension<AppTypography> {
 
   @override
   ThemeExtension<AppTypography> lerp(
-    covariant ThemeExtension<AppTypography>? other,
-    double t,
-  ) {
+      covariant ThemeExtension<AppTypography>? other,
+      double t,
+      ) {
     if (other is! AppTypography) {
       return this;
     }
@@ -127,7 +127,7 @@ class AppTypography extends ThemeExtension<AppTypography> {
   static AppTypography light = AppTypography(
     displayLarge: GoogleFonts.montserrat(
       fontSize: 57,
-      fontWeight: FontWeight.w400,
+      fontWeight: FontWeight.w600,
       height: 1.12,
     ),
     displayMedium: GoogleFonts.montserrat(
@@ -135,14 +135,14 @@ class AppTypography extends ThemeExtension<AppTypography> {
       fontWeight: FontWeight.w400,
       height: 1.16,
     ),
-    displaySmall: GoogleFonts.montserrat(
+    displaySmall: GoogleFonts.abel(
       fontSize: 36,
       fontWeight: FontWeight.w400,
       height: 1.22,
     ),
     headlineLarge: GoogleFonts.montserrat(
       fontSize: 32,
-      fontWeight: FontWeight.w400,
+      fontWeight: FontWeight.w600,
       height: 1.25,
     ),
     headlineMedium: GoogleFonts.montserrat(
@@ -157,7 +157,7 @@ class AppTypography extends ThemeExtension<AppTypography> {
     ),
     titleLarge: GoogleFonts.montserrat(
       fontSize: 22,
-      fontWeight: FontWeight.w500,
+      fontWeight: FontWeight.w600,
       height: 1.27,
     ),
     titleMedium: GoogleFonts.montserrat(
@@ -174,7 +174,7 @@ class AppTypography extends ThemeExtension<AppTypography> {
     ),
     bodyLarge: GoogleFonts.montserrat(
       fontSize: 16,
-      fontWeight: FontWeight.w400,
+      fontWeight: FontWeight.w600,
       height: 1.5,
       letterSpacing: 0.5,
     ),
