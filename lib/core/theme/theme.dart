@@ -18,13 +18,17 @@ class AppTheme {
     navigationBarTheme: NavigationBarThemeData(
       backgroundColor: _lightAppColors.white,
       labelTextStyle: WidgetStateProperty.resolveWith((
-          Set<WidgetState> states,
-          ) {
+        Set<WidgetState> states,
+      ) {
         final Color color =
-        states.contains(WidgetState.selected)
-            ? _lightAppColors.primary
-            : _lightAppColors.black;
-        return TextStyle(color: color);
+            states.contains(WidgetState.selected)
+                ? _lightAppColors.primary
+                : _lightAppColors.black;
+        return TextStyle(
+          color: color,
+          fontWeight: FontWeight.w600,
+          fontSize: 12,
+        );
       }),
     ),
     scaffoldBackgroundColor: _lightAppColors.white,
