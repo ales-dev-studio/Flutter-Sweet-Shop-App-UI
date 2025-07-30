@@ -9,6 +9,7 @@ import 'package:flutter_sweet_shop_app_ui/features/home_feature/presentation/wid
 
 import '../../../../core/gen/assets.gen.dart';
 import '../bloc/bottom_navigation_cubit.dart';
+import '../widgets/home_app_bar.dart';
 import '../widgets/tabs/home_tab.dart';
 import '../widgets/tabs/map_tab.dart';
 
@@ -40,6 +41,7 @@ class _HomeScreen extends StatelessWidget {
       const ProfileTab(),
     ];
     return AppScaffold(
+      appBar: watch.state.selectedIndex == 0 ? HomeAppBar() : null,
       body: tabs[watch.state.selectedIndex],
       padding: EdgeInsets.zero,
       bottomNavigationBar: Container(

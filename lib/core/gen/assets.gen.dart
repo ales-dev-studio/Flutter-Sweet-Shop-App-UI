@@ -821,6 +821,10 @@ class $AssetsImagesGen {
   AssetGenImage get donutCategory1 =>
       const AssetGenImage('assets/images/donut category 1.png');
 
+  /// File path: assets/images/donut category 2.png
+  AssetGenImage get donutCategory2 =>
+      const AssetGenImage('assets/images/donut category 2.png');
+
   /// File path: assets/images/donut category 3.png
   AssetGenImage get donutCategory3 =>
       const AssetGenImage('assets/images/donut category 3.png');
@@ -828,10 +832,6 @@ class $AssetsImagesGen {
   /// File path: assets/images/donut illustration.png
   AssetGenImage get donutIllustration =>
       const AssetGenImage('assets/images/donut illustration.png');
-
-  /// File path: assets/images/dount category 2.png
-  AssetGenImage get dountCategory2 =>
-      const AssetGenImage('assets/images/dount category 2.png');
 
   /// File path: assets/images/logo.png
   AssetGenImage get logo => const AssetGenImage('assets/images/logo.png');
@@ -868,9 +868,9 @@ class $AssetsImagesGen {
     cupcakeCategory3,
     cupcakeIllustration,
     donutCategory1,
+    donutCategory2,
     donutCategory3,
     donutIllustration,
-    dountCategory2,
     logo,
     pastryIllustration,
     redVelvetCakeWithFruit,
