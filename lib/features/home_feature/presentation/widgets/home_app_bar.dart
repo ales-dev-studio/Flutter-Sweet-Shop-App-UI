@@ -13,6 +13,7 @@ class HomeAppBar extends StatelessWidget implements PreferredSizeWidget {
   @override
   Widget build(BuildContext context) {
     final colors = context.theme.appColors;
+    final typography = context.theme.appTypography;
     return Column(
       children: [
         AppBar(
@@ -28,11 +29,14 @@ class HomeAppBar extends StatelessWidget implements PreferredSizeWidget {
                 children: [
                   Text(
                     'Location',
-                    style: TextStyle(fontSize: 16, color: colors.white),
+                    style: typography.titleSmall.copyWith(
+                      color: colors.white,
+                      fontWeight: FontWeight.bold,
+                    ),
                   ),
                   Text(
                     'New York, AUS',
-                    style: TextStyle(fontSize: 14, color: colors.white),
+                    style: typography.titleSmall.copyWith(color: colors.white),
                   ),
                 ],
               ),
