@@ -15,6 +15,14 @@ class AppTheme {
       seedColor: _lightAppColors.primary,
       brightness: Brightness.light,
     ),
+    appBarTheme: AppBarTheme(
+      backgroundColor: _lightAppColors.white,
+      titleTextStyle: AppTypography.light.bodyLarge.copyWith(
+        color: _lightAppColors.black,
+        fontSize: 17,
+      ),
+      surfaceTintColor: Colors.transparent,
+    ),
     navigationBarTheme: NavigationBarThemeData(
       backgroundColor: _lightAppColors.white,
       labelTextStyle: WidgetStateProperty.resolveWith((
