@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_sweet_shop_app_ui/core/theme/dimens.dart';
 import 'package:flutter_sweet_shop_app_ui/features/home_feature/presentation/widgets/banner_slider_widget.dart';
+import 'package:flutter_sweet_shop_app_ui/features/home_feature/presentation/widgets/products_list.dart';
 
 import '../../../../../core/widgets/app_title_widget.dart';
 import '../categories_list.dart';
@@ -16,6 +18,8 @@ class HomeTab extends StatelessWidget {
           BannerSliderWidget(),
           AppTitleWidget(onPressed: () {}, title: 'Categories'),
           CategoriesList(),
+          ProductsList(),
+          SizedBox(height: Dimens.largePadding),
         ],
       ),
     );
