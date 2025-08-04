@@ -24,11 +24,18 @@ class AppTitleWidget extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          Text(
-            title,
-            style: context.theme.appTypography.titleSmall.copyWith(
-              fontWeight: FontWeight.bold,
-            ),
+          Row(
+            spacing: Dimens.largePadding,
+            children: [
+              if (thumbnailPath != null)
+                Image.asset(thumbnailPath!, width: 34, height: 34),
+              Text(
+                title,
+                style: context.theme.appTypography.titleSmall.copyWith(
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+            ],
           ),
           AppTextButton(
             onPressed: onPressed,

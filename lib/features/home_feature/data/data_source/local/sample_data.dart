@@ -48,3 +48,27 @@ List<String> productsImage = [
   Assets.images.redVelvetCakeWithFruit.path,
   Assets.images.strawberryChocolateCake.path,
 ];
+
+List<String> categoryProductsImage = [
+  Assets.images.donutCategory1.path,
+  Assets.images.donutCategory2.path,
+  Assets.images.donutCategory3.path,
+  Assets.images.cupcakeCategory1.path,
+  Assets.images.cupcakeCategory2.path,
+  Assets.images.cupcakeCategory3.path,
+  Assets.images.birthdayCakeCategory1.path,
+  Assets.images.birthdayCakeCategory2.path,
+  Assets.images.birthdayCakeCategory3.path,
+];
+
+List<String> categoryProductsName = [
+  'Sponge donut',
+  'Chocolate donut',
+  'Donuts',
+  'Strawberry cake',
+  'blackberry cake',
+  'Chocolate cake',
+  'Birthday cake',
+  'Birthday cake',
+  'Birthday cake',
+];
