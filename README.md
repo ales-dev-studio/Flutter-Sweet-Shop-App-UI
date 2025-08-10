@@ -16,8 +16,11 @@ Responsive Layouts for all screen sizes
 State Management with Cubit
 
 Interactive UI Elements:
+
   Carousel sliders for promotions
+  
   Animated bottom navigation bar
+  
   Custom AppBar with search functionality
 
 
