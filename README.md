@@ -10,8 +10,11 @@ Perfect for learning Flutter UI development and Figma-to-Flutter workflows.
 
 ## Features
 Custom Theme System (Colors, Typography, Dimensions)
+
 Responsive Layouts for all screen sizes
+
 State Management with Cubit
+
 Interactive UI Elements:
   Carousel sliders for promotions
   Animated bottom navigation bar
