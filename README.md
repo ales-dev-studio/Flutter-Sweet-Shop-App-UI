@@ -6,7 +6,7 @@ Perfect for learning Flutter UI development and Figma-to-Flutter workflows.
 
 ## Demo image
 
-![Demo](https://raw.githubusercontent.com/ales-dev-studio/Flutter-Sweet-Shop-App-UI/refs/heads/main/assets/images/Demo.jpg)
+![Demo](https://raw.githubusercontent.com/ales-dev-studio/Flutter-Sweet-Shop-App-UI/refs/heads/main/assets/demos/demo-1.png)
 
 ## Features
 Custom Theme System (Colors, Typography, Dimensions)
