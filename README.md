@@ -25,9 +25,13 @@ Interactive UI Elements:
 
 
 ## Tech Stack
+
 Flutter 3.x
+
 flutter_gen (for asset generation)
+
 carousel_slider (for banners)
+
 flutter_svg (for vector graphics)
 
 ## Getting Started  
