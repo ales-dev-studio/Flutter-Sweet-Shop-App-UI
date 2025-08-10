@@ -1,16 +1,46 @@
-# flutter_sweet_shop_app_ui
+# 🍰 Flutter Sweet Shop App
 
-A new Flutter project.
+A complete Sweet Shop UI built with Flutter, featuring splash screens, home pages, special offers, and category sections.
 
-## Getting Started
+Perfect for learning Flutter UI development and Figma-to-Flutter workflows.
 
-This project is a starting point for a Flutter application.
+## Demo image
 
-A few resources to get you started if this is your first Flutter project:
+![Demo](https://raw.githubusercontent.com/ales-dev-studio/Flutter-Sweet-Shop-App-UI/refs/heads/main/assets/images/Demo.jpg)
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Features
+Custom Theme System (Colors, Typography, Dimensions)
+Responsive Layouts for all screen sizes
+State Management with Cubit
+Interactive UI Elements:
+  Carousel sliders for promotions
+  Animated bottom navigation bar
+  Custom AppBar with search functionality
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
+## Tech Stack
+Flutter 3.x
+flutter_gen (for asset generation)
+carousel_slider (for banners)
+flutter_svg (for vector graphics)
+
+## Getting Started  
+1. Clone the repository  
+   ```bash
+   git clone https://github.com/yourusername/Flutter-Sweet-Shop-App-UI.git
+   ```
+2. Install dependencies  
+   ```bash
+   flutter pub get
+   ```
+3. Run the app  
+   ```bash
+   flutter run
+   ```
+
+## 📚 Learning Resources  
+- [Flutter Documentation](https://flutter.dev/docs)  
+- [Cubit State Management](https://bloclibrary.dev/#/fluttercubitgettingstarted)  
+
+## 🤝 Contributing  
+Pull requests are welcome!
