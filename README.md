@@ -24,15 +24,12 @@ Interactive UI Elements:
   Custom AppBar with search functionality
 
 
-## Tech Stack
-
-Flutter 3.x
-
-flutter_gen (for asset generation)
-
-carousel_slider (for banners)
-
-flutter_svg (for vector graphics)
+## Tech Stack  
+- **Flutter**
+- **Packages**:  
+  - `flutter_bloc` for navigation
+  - `flutter_svg` for vector assets  
+  - `flutter_gen` for asset management  
 
 ## Getting Started  
 1. Clone the repository  
