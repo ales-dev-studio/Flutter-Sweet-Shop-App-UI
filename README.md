@@ -1,4 +1,4 @@
-# 🍰 Flutter Sweet Shop App
+# 🍰 Flutter Sweet Shop App [![Project Status](https://img.shields.io/badge/status-under%20development-orange.svg)](https://github.com/yourusername/repo)
 
 A complete Sweet Shop UI built with Flutter, featuring splash screens, home pages, special offers, and category sections.
 
