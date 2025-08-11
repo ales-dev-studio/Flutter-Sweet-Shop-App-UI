@@ -34,7 +34,7 @@ Interactive UI Elements:
 ## Getting Started  
 1. Clone the repository  
    ```bash
-   git clone https://github.com/yourusername/Flutter-Sweet-Shop-App-UI.git
+   git clone https://github.com/ales-dev-studio/Flutter-Sweet-Shop-App-UI.git
    ```
 2. Install dependencies  
    ```bash
