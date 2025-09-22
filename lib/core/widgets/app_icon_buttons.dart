@@ -4,16 +4,24 @@ import 'package:flutter_sweet_shop_app_ui/core/theme/theme.dart';
 import 'app_svg_viewer.dart';
 
 class AppIconButton extends StatelessWidget {
-  const AppIconButton({super.key, required this.iconPath, this.onPressed});
+  const AppIconButton({
+    super.key,
+    required this.iconPath,
+    this.onPressed,
+    this.iconColor,
+    this.backgroundColor,
+  });
 
   final String iconPath;
   final VoidCallback? onPressed;
+  final Color? iconColor;
+  final Color? backgroundColor;
 
   @override
   Widget build(BuildContext context) {
     return Container(
       decoration: BoxDecoration(
-        color: context.theme.appColors.secondaryShade5,
+        color: backgroundColor ?? context.theme.appColors.secondaryShade5,
         borderRadius: BorderRadius.circular(100),
       ),
       child: IconButton(
@@ -21,7 +29,7 @@ class AppIconButton extends StatelessWidget {
         icon: AppSvgViewer(
           iconPath,
           width: 25,
-          color: context.theme.appColors.white,
+          color: iconColor ?? context.theme.appColors.white,
         ),
       ),
     );

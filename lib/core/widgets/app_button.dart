@@ -11,6 +11,8 @@ class AppButton extends StatelessWidget {
     required this.title,
     required this.onPressed,
     this.color,
+    this.textStyle,
+    this.iconColor,
     this.width,
     this.iconPath,
     this.margin,
@@ -21,6 +23,8 @@ class AppButton extends StatelessWidget {
   final String title;
   final GestureTapCallback? onPressed;
   final Color? color;
+  final TextStyle? textStyle;
+  final Color? iconColor;
   final double? width;
   final String? iconPath;
   final EdgeInsets? margin;
@@ -61,10 +65,10 @@ class AppButton extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             if (iconPath != null) ...[
-              AppSvgViewer(iconPath ?? '', color: colors.white),
+              AppSvgViewer(iconPath ?? '', color: iconColor ?? colors.white),
               const SizedBox(width: Dimens.largePadding),
             ],
-            Text(title),
+            Text(title, style: textStyle),
           ],
         ),
       ),

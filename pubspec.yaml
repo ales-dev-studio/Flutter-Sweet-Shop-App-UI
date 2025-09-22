@@ -20,6 +20,7 @@ dependencies:
   flutter_svg: ^2.2.0
   carousel_slider: ^5.0.0
   smooth_page_indicator: ^1.2.1
+  readmore: ^3.0.0
 
 dev_dependencies:
   build_runner: ^2.4.15

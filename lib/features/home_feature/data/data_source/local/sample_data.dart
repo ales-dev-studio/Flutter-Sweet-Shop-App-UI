@@ -72,3 +72,9 @@ List<String> categoryProductsName = [
   'Birthday cake',
   'Birthday cake',
 ];
+
+final String productDescription =
+    'Our chocolate cake is made with a combination of the finest ingredients, from premium chocolate and cocoa to the freshest eggs and pure butter. With a soft, moist texture and rich chocolate flavor, this cake will give you an unforgettable experience.\nEach slice is a celebration of pure indulgence, crafted to delight your senses.\nDiscover the difference that quality and care make in every single bite.';
+
+final List<String> weights = ['0.5 kg', '1 kg', '1.5 kg', '2 kg', '4 kg'];
+
