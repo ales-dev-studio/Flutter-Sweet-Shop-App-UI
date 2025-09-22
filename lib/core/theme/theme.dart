@@ -86,7 +86,7 @@ class AppTheme {
     errorLight: Color(0xFFE00004),
     errorExtraLight: Color(0xFFFFE1E0),
     success: Color(0xFF4CAF50),
-    successLight: Color(0xFFCDEBCD),
+    successLight: Color(0xFF8DC640),
     warning: Color(0xFFFFCAAB),
     warningLight: Color(0xFFFDF3D7),
   );

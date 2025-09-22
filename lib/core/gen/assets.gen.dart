@@ -158,6 +158,9 @@ class $AssetsIconsGen {
   /// File path: assets/icons/book-square.svg
   String get bookSquare => 'assets/icons/book-square.svg';
 
+  /// File path: assets/icons/call.svg
+  String get call => 'assets/icons/call.svg';
+
   /// File path: assets/icons/candle-2.svg
   String get candle2 => 'assets/icons/candle-2.svg';
 
@@ -622,6 +625,7 @@ class $AssetsIconsGen {
     barcode,
     bookSaved,
     bookSquare,
+    call,
     candle2,
     candle,
     category2,
@@ -782,6 +786,10 @@ class $AssetsImagesGen {
   AssetGenImage get specialOffer4 =>
       const AssetGenImage('assets/images/Special offer 4.png');
 
+  /// File path: assets/images/big cake.png
+  AssetGenImage get bigCake =>
+      const AssetGenImage('assets/images/big cake.png');
+
   /// File path: assets/images/birthday cake category 1.png
   AssetGenImage get birthdayCakeCategory1 =>
       const AssetGenImage('assets/images/birthday cake category 1.png');
@@ -840,6 +848,10 @@ class $AssetsImagesGen {
   AssetGenImage get pastryIllustration =>
       const AssetGenImage('assets/images/pastry illustration.png');
 
+  /// File path: assets/images/profile-image.png
+  AssetGenImage get profileImage =>
+      const AssetGenImage('assets/images/profile-image.png');
+
   /// File path: assets/images/red velvet cake with fruit.png
   AssetGenImage get redVelvetCakeWithFruit =>
       const AssetGenImage('assets/images/red velvet cake with fruit.png');
@@ -858,6 +870,7 @@ class $AssetsImagesGen {
     specialOffer2,
     specialOffer3,
     specialOffer4,
+    bigCake,
     birthdayCakeCategory1,
     birthdayCakeCategory2,
     birthdayCakeCategory3,
@@ -873,6 +886,7 @@ class $AssetsImagesGen {
     donutIllustration,
     logo,
     pastryIllustration,
+    profileImage,
     redVelvetCakeWithFruit,
     splashHeader,
     strawberryChocolateCake,
