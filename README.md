@@ -4,9 +4,10 @@ A complete Sweet Shop UI built with Flutter, featuring splash screens, home page
 
 Perfect for learning Flutter UI development and Figma-to-Flutter workflows.
 
-## Demo image
+## Demo images
 
 ![Demo](https://raw.githubusercontent.com/ales-dev-studio/Flutter-Sweet-Shop-App-UI/refs/heads/main/assets/demos/demo-1.png)
+![Demo](https://raw.githubusercontent.com/ales-dev-studio/Flutter-Sweet-Shop-App-UI/refs/heads/main/assets/demos/demo-2.png)
 
 ## Features
 Custom Theme System (Colors, Typography, Dimensions)
