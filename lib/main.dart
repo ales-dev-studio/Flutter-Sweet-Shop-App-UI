@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter_sweet_shop_app_ui/features/cart_feature/presentation/bloc/cart_cubit.dart';
 import 'core/theme/theme.dart';
 import 'features/home_feature/presentation/screens/splash_screen.dart';
 
@@ -13,12 +15,15 @@ class App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]);
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      theme: AppTheme.light,
-      darkTheme: AppTheme.dark,
-      themeMode: ThemeMode.light,
-      home: SplashScreen(),
+    return BlocProvider(
+      create: (context) => CartCubit()..loadCart(),
+      child: MaterialApp(
+        debugShowCheckedModeBanner: false,
+        theme: AppTheme.light,
+        darkTheme: AppTheme.dark,
+        themeMode: ThemeMode.light,
+        home: SplashScreen(),
+      ),
     );
   }
 }

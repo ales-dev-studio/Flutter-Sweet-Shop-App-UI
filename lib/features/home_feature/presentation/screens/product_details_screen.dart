@@ -1,4 +1,7 @@
+import 'dart:math';
+
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_sweet_shop_app_ui/core/theme/theme.dart';
 import 'package:flutter_sweet_shop_app_ui/core/utils/sized_context.dart';
 import 'package:flutter_sweet_shop_app_ui/core/widgets/app_button.dart';
@@ -11,6 +14,9 @@ import 'package:flutter_sweet_shop_app_ui/features/home_feature/presentation/wid
 
 import '../../../../core/gen/assets.gen.dart';
 import '../../../../core/theme/dimens.dart';
+import '../../../cart_feature/data/data_source/local/fake_products.dart';
+import '../../../cart_feature/data/models/product_model.dart';
+import '../../../cart_feature/presentation/bloc/cart_cubit.dart';
 import '../../data/data_source/local/sample_data.dart';
 import '../widgets/product_details_app_bar.dart';
 
@@ -78,7 +84,7 @@ class _ProductDetailsScreenState extends State<ProductDetailsScreen> {
                                   child: AppButton(
                                     margin: EdgeInsets.zero,
                                     title: 'Add to cart',
-                                    onPressed: () {},
+                                    onPressed: _addToCart,
                                     borderRadius: Dimens.corners,
                                     color: appColor.white,
                                     textStyle: appTypography.bodyLarge.copyWith(
@@ -199,5 +205,14 @@ class _ProductDetailsScreenState extends State<ProductDetailsScreen> {
         ),
       ),
     );
+  }
+
+  void _addToCart() {
+    final cartCubit = context.read<CartCubit>();
+    final ProductModel product = FakeProducts.products[Random().nextInt(7)];
+    cartCubit.addItem(product);
+    ScaffoldMessenger.of(
+      context,
+    ).showSnackBar(SnackBar(content: Text('${product.name} added to cart!')));
   }
 }
