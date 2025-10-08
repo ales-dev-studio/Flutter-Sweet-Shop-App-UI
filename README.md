@@ -1,12 +1,11 @@
 # 🍰 Flutter Sweet Shop App [![Project Status](https://img.shields.io/badge/status-under%20development-orange.svg)]()
 
-A complete Sweet Shop UI built with Flutter, featuring splash screens, home pages, special offers, and category sections.
+A complete Sweet Shop UI built with Flutter, perfect for learning Flutter UI development and Figma-to-Flutter workflows.
 
-Perfect for learning Flutter UI development and Figma-to-Flutter workflows.
-
-## Demo image
+## Demo images
 
 ![Demo](https://raw.githubusercontent.com/ales-dev-studio/Flutter-Sweet-Shop-App-UI/refs/heads/main/assets/demos/demo-1.png)
+![Demo](https://raw.githubusercontent.com/ales-dev-studio/Flutter-Sweet-Shop-App-UI/refs/heads/main/assets/demos/demo-2.png)
 
 ## Features
 Custom Theme System (Colors, Typography, Dimensions)
@@ -46,6 +45,7 @@ Interactive UI Elements:
    ```
 
 ## 📚 Resources  
+- [YouTube playlist](https://youtube.com/playlist?list=PLFecs-ae_8FG8O_y6zSL9muONH-iC5kYH&si=pwhuw0HfssxorQ9A)
 - [Figma Design](https://www.figma.com/design/kgbuMUCvaYoMXLRjDxkZ6s/Sweet-Craze?node-id=1-2&t=ynInnRvFPLgl3VuP-1)  
 - [Flutter Documentation](https://flutter.dev)  
 - [Cubit State Management](https://bloclibrary.dev/)  
