@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_sweet_shop_app_ui/core/theme/theme.dart';
+import 'package:flutter_sweet_shop_app_ui/core/utils/app_navigator.dart';
 import 'package:flutter_sweet_shop_app_ui/core/widgets/app_button.dart';
 import 'package:flutter_sweet_shop_app_ui/core/widgets/app_scaffold.dart';
 import 'package:flutter_sweet_shop_app_ui/core/widgets/general_app_bar.dart';
 import 'package:flutter_sweet_shop_app_ui/features/cart_feature/presentation/bloc/cart_cubit.dart';
+import 'package:flutter_sweet_shop_app_ui/features/cart_feature/presentation/screens/proceed_to_checkout_screen.dart';
 
 import '../../../../core/gen/assets.gen.dart';
 import '../../../../core/theme/dimens.dart';
@@ -73,7 +75,9 @@ class CartScreen extends StatelessWidget {
                       ),
                       AppButton(
                         title: 'Proceed To Checkout',
-                        onPressed: () {},
+                        onPressed: () {
+                          appPush(context, ProceedToCheckoutScreen());
+                        },
                         textStyle: appTypography.bodyLarge,
                         borderRadius: Dimens.corners,
                         margin: EdgeInsets.symmetric(
