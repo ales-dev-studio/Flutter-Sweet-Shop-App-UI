@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_sweet_shop_app_ui/core/theme/dimens.dart';
 import 'package:flutter_sweet_shop_app_ui/core/theme/theme.dart';
+import 'package:flutter_sweet_shop_app_ui/core/utils/app_navigator.dart';
 import 'package:flutter_sweet_shop_app_ui/core/widgets/app_divider.dart';
 import 'package:flutter_sweet_shop_app_ui/core/widgets/app_scaffold.dart';
 import 'package:flutter_sweet_shop_app_ui/core/widgets/app_svg_viewer.dart';
 import 'package:flutter_sweet_shop_app_ui/core/widgets/bordered_container.dart';
 import 'package:flutter_sweet_shop_app_ui/core/widgets/general_app_bar.dart';
+import 'package:flutter_sweet_shop_app_ui/features/cart_feature/presentation/screens/change_address_screen.dart';
 import 'package:flutter_sweet_shop_app_ui/features/cart_feature/presentation/widgets/orders_list_for_checkout.dart';
 import 'package:flutter_sweet_shop_app_ui/features/cart_feature/presentation/widgets/payment_details_item.dart';
 
@@ -79,7 +81,9 @@ class ProceedToCheckoutScreen extends StatelessWidget {
                           borderColor: appColors.primary,
                           borderRadius: Dimens.smallCorners,
                           child: InkWell(
-                            onTap: () {},
+                            onTap: () {
+                              appPush(context, ChangeAddressScreen());
+                            },
                             borderRadius: BorderRadius.circular(
                               Dimens.smallCorners,
                             ),
