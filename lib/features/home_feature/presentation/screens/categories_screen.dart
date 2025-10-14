@@ -1,4 +1,7 @@
+import 'dart:math';
+
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_sweet_shop_app_ui/core/theme/dimens.dart';
 import 'package:flutter_sweet_shop_app_ui/core/theme/theme.dart';
 import 'package:flutter_sweet_shop_app_ui/core/widgets/rate_widget.dart';
@@ -7,6 +10,9 @@ import '../../../../core/widgets/app_button.dart';
 import '../../../../core/widgets/app_scaffold.dart';
 import '../../../../core/widgets/app_title_widget.dart';
 import '../../../../core/widgets/general_app_bar.dart';
+import '../../../cart_feature/data/data_source/local/fake_products.dart';
+import '../../../cart_feature/data/models/product_model.dart';
+import '../../../cart_feature/presentation/bloc/cart_cubit.dart';
 import '../../data/data_source/local/sample_data.dart';
 
 class CategoriesScreen extends StatelessWidget {
@@ -113,7 +119,9 @@ class CategoriesScreen extends StatelessWidget {
                             height: 32,
                             child: AppButton(
                               title: 'Add to Cart',
-                              onPressed: () {},
+                              onPressed: () {
+                                _addToCart(context);
+                              },
                               margin: EdgeInsets.zero,
                               padding: WidgetStateProperty.all<EdgeInsets>(
                                 EdgeInsets.symmetric(
@@ -135,6 +143,15 @@ class CategoriesScreen extends StatelessWidget {
           return SizedBox(height: Dimens.largePadding);
         },
       ),
+    );
+  }
+
+  void _addToCart(final BuildContext context) {
+    final cartCubit = context.read<CartCubit>();
+    final ProductModel product = FakeProducts.products[Random().nextInt(7)];
+    cartCubit.addItem(product);
+    ScaffoldMessenger.of(context).showSnackBar(
+      SnackBar(content: Text('A random product was added to cart!')),
     );
   }
 }

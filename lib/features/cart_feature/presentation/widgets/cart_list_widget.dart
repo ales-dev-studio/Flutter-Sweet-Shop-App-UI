@@ -36,6 +36,7 @@ class CartListWidget extends StatelessWidget {
               color: appColors.white,
             ),
           ),
+          direction: DismissDirection.endToStart,
           onDismissed: (final direction) {
             context.read<CartCubit>().removeItem(items[index].product.id);
           },

@@ -32,17 +32,19 @@ class _SplashScreenState extends State<SplashScreen> {
       backgroundColor: colors.brownExtraLight,
       padding: EdgeInsets.zero,
       safeAreaTop: false,
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        children: [
-          Assets.images.splashHeader.image(),
-          Assets.images.logo.image(
-            width: checkVerySmallDeviceSize(context) ? 290 : 390,
-          ),
-          Assets.images.cake.image(
-            width: checkVerySmallDeviceSize(context) ? 205 : 305,
-          ),
-        ],
+      body: SingleChildScrollView(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            Assets.images.splashHeader.image(),
+            Assets.images.logo.image(
+              width: checkVerySmallDeviceSize(context) ? 290 : 390,
+            ),
+            Assets.images.cake.image(
+              width: checkVerySmallDeviceSize(context) ? 205 : 305,
+            ),
+          ],
+        ),
       ),
     );
   }
