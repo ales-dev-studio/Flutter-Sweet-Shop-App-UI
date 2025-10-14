@@ -89,6 +89,9 @@ class $AssetsIconsGen {
   /// File path: assets/icons/arrow-right.svg
   String get arrowRight => 'assets/icons/arrow-right.svg';
 
+  /// File path: assets/icons/arrow-right4.svg
+  String get arrowRight4 => 'assets/icons/arrow-right4.svg';
+
   /// File path: assets/icons/arrow-square-down.svg
   String get arrowSquareDown => 'assets/icons/arrow-square-down.svg';
 
@@ -167,6 +170,9 @@ class $AssetsIconsGen {
   /// File path: assets/icons/candle.svg
   String get candle => 'assets/icons/candle.svg';
 
+  /// File path: assets/icons/card-pos.svg
+  String get cardPos => 'assets/icons/card-pos.svg';
+
   /// File path: assets/icons/category-2.svg
   String get category2 => 'assets/icons/category-2.svg';
 
@@ -193,6 +199,9 @@ class $AssetsIconsGen {
 
   /// File path: assets/icons/dislike.svg
   String get dislike => 'assets/icons/dislike.svg';
+
+  /// File path: assets/icons/edit.svg
+  String get edit => 'assets/icons/edit.svg';
 
   /// File path: assets/icons/element-3.svg
   String get element3 => 'assets/icons/element-3.svg';
@@ -272,6 +281,12 @@ class $AssetsIconsGen {
   /// File path: assets/icons/import.svg
   String get import => 'assets/icons/import.svg';
 
+  /// File path: assets/icons/info-circle.svg
+  String get infoCircle => 'assets/icons/info-circle.svg';
+
+  /// File path: assets/icons/language-square.svg
+  String get languageSquare => 'assets/icons/language-square.svg';
+
   /// File path: assets/icons/like.svg
   String get like => 'assets/icons/like.svg';
 
@@ -314,11 +329,17 @@ class $AssetsIconsGen {
   /// File path: assets/icons/menu.svg
   String get menu => 'assets/icons/menu.svg';
 
+  /// File path: assets/icons/moon.svg
+  String get moon => 'assets/icons/moon.svg';
+
   /// File path: assets/icons/more-2.svg
   String get more2 => 'assets/icons/more-2.svg';
 
   /// File path: assets/icons/more.svg
   String get more => 'assets/icons/more.svg';
+
+  /// File path: assets/icons/note-text.svg
+  String get noteText => 'assets/icons/note-text.svg';
 
   /// File path: assets/icons/notification-bing.svg
   String get notificationBing => 'assets/icons/notification-bing.svg';
@@ -602,6 +623,7 @@ class $AssetsIconsGen {
     arrowRight2,
     arrowRight3,
     arrowRight,
+    arrowRight4,
     arrowSquareDown,
     arrowSquareLeft,
     arrowSquareRight,
@@ -628,6 +650,7 @@ class $AssetsIconsGen {
     call,
     candle2,
     candle,
+    cardPos,
     category2,
     category,
     convert,
@@ -637,6 +660,7 @@ class $AssetsIconsGen {
     directUp,
     discover,
     dislike,
+    edit,
     element3,
     export1,
     export2,
@@ -663,6 +687,8 @@ class $AssetsIconsGen {
     import1,
     import2,
     import,
+    infoCircle,
+    languageSquare,
     like,
     locationAdd,
     locationCross,
@@ -677,8 +703,10 @@ class $AssetsIconsGen {
     map1,
     map,
     menu,
+    moon,
     more2,
     more,
+    noteText,
     notificationBing,
     notification,
     people,
