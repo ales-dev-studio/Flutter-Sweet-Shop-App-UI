@@ -179,6 +179,9 @@ class $AssetsIconsGen {
   /// File path: assets/icons/category.svg
   String get category => 'assets/icons/category.svg';
 
+  /// File path: assets/icons/clock.svg
+  String get clock => 'assets/icons/clock.svg';
+
   /// File path: assets/icons/convert.svg
   String get convert => 'assets/icons/convert.svg';
 
@@ -653,6 +656,7 @@ class $AssetsIconsGen {
     cardPos,
     category2,
     category,
+    clock,
     convert,
     directDown,
     directLeft,
@@ -872,9 +876,33 @@ class $AssetsImagesGen {
   /// File path: assets/images/logo.png
   AssetGenImage get logo => const AssetGenImage('assets/images/logo.png');
 
+  /// File path: assets/images/map-img-1.png
+  AssetGenImage get mapImg1 =>
+      const AssetGenImage('assets/images/map-img-1.png');
+
+  /// File path: assets/images/map-img-2.png
+  AssetGenImage get mapImg2 =>
+      const AssetGenImage('assets/images/map-img-2.png');
+
   /// File path: assets/images/pastry illustration.png
   AssetGenImage get pastryIllustration =>
       const AssetGenImage('assets/images/pastry illustration.png');
+
+  /// File path: assets/images/pastry-maker-1.png
+  AssetGenImage get pastryMaker1 =>
+      const AssetGenImage('assets/images/pastry-maker-1.png');
+
+  /// File path: assets/images/pastry-maker-2.png
+  AssetGenImage get pastryMaker2 =>
+      const AssetGenImage('assets/images/pastry-maker-2.png');
+
+  /// File path: assets/images/pastry-maker-3.png
+  AssetGenImage get pastryMaker3 =>
+      const AssetGenImage('assets/images/pastry-maker-3.png');
+
+  /// File path: assets/images/pastry-maker-4.png
+  AssetGenImage get pastryMaker4 =>
+      const AssetGenImage('assets/images/pastry-maker-4.png');
 
   /// File path: assets/images/profile-image.png
   AssetGenImage get profileImage =>
@@ -913,7 +941,13 @@ class $AssetsImagesGen {
     donutCategory3,
     donutIllustration,
     logo,
+    mapImg1,
+    mapImg2,
     pastryIllustration,
+    pastryMaker1,
+    pastryMaker2,
+    pastryMaker3,
+    pastryMaker4,
     profileImage,
     redVelvetCakeWithFruit,
     splashHeader,
