@@ -14,6 +14,9 @@ import 'package:flutter/widgets.dart';
 class $AssetsIconsGen {
   const $AssetsIconsGen();
 
+  /// File path: assets/icons/apple-logo.svg
+  String get appleLogo => 'assets/icons/apple-logo.svg';
+
   /// File path: assets/icons/archive-add.svg
   String get archiveAdd => 'assets/icons/archive-add.svg';
 
@@ -25,6 +28,9 @@ class $AssetsIconsGen {
 
   /// File path: assets/icons/archive-tick.svg
   String get archiveTick => 'assets/icons/archive-tick.svg';
+
+  /// File path: assets/icons/archive.svg
+  String get archive => 'assets/icons/archive.svg';
 
   /// File path: assets/icons/arrange-circle-2.svg
   String get arrangeCircle2 => 'assets/icons/arrange-circle-2.svg';
@@ -170,8 +176,41 @@ class $AssetsIconsGen {
   /// File path: assets/icons/candle.svg
   String get candle => 'assets/icons/candle.svg';
 
+  /// File path: assets/icons/card-add.svg
+  String get cardAdd => 'assets/icons/card-add.svg';
+
+  /// File path: assets/icons/card-edit.svg
+  String get cardEdit => 'assets/icons/card-edit.svg';
+
   /// File path: assets/icons/card-pos.svg
   String get cardPos => 'assets/icons/card-pos.svg';
+
+  /// File path: assets/icons/card-receive.svg
+  String get cardReceive => 'assets/icons/card-receive.svg';
+
+  /// File path: assets/icons/card-remove-1.svg
+  String get cardRemove1 => 'assets/icons/card-remove-1.svg';
+
+  /// File path: assets/icons/card-remove.svg
+  String get cardRemove => 'assets/icons/card-remove.svg';
+
+  /// File path: assets/icons/card-send.svg
+  String get cardSend => 'assets/icons/card-send.svg';
+
+  /// File path: assets/icons/card-slash.svg
+  String get cardSlash => 'assets/icons/card-slash.svg';
+
+  /// File path: assets/icons/card-tick-1.svg
+  String get cardTick1 => 'assets/icons/card-tick-1.svg';
+
+  /// File path: assets/icons/card-tick.svg
+  String get cardTick => 'assets/icons/card-tick.svg';
+
+  /// File path: assets/icons/card.svg
+  String get card => 'assets/icons/card.svg';
+
+  /// File path: assets/icons/cards.svg
+  String get cards => 'assets/icons/cards.svg';
 
   /// File path: assets/icons/category-2.svg
   String get category2 => 'assets/icons/category-2.svg';
@@ -179,8 +218,17 @@ class $AssetsIconsGen {
   /// File path: assets/icons/category.svg
   String get category => 'assets/icons/category.svg';
 
+  /// File path: assets/icons/chart-square.svg
+  String get chartSquare => 'assets/icons/chart-square.svg';
+
   /// File path: assets/icons/clock.svg
   String get clock => 'assets/icons/clock.svg';
+
+  /// File path: assets/icons/coin-1.svg
+  String get coin1 => 'assets/icons/coin-1.svg';
+
+  /// File path: assets/icons/coin.svg
+  String get coin => 'assets/icons/coin.svg';
 
   /// File path: assets/icons/convert.svg
   String get convert => 'assets/icons/convert.svg';
@@ -197,17 +245,50 @@ class $AssetsIconsGen {
   /// File path: assets/icons/direct-up.svg
   String get directUp => 'assets/icons/direct-up.svg';
 
+  /// File path: assets/icons/discount-circle.svg
+  String get discountCircle => 'assets/icons/discount-circle.svg';
+
+  /// File path: assets/icons/discount-shape.svg
+  String get discountShape => 'assets/icons/discount-shape.svg';
+
   /// File path: assets/icons/discover.svg
   String get discover => 'assets/icons/discover.svg';
 
   /// File path: assets/icons/dislike.svg
   String get dislike => 'assets/icons/dislike.svg';
 
+  /// File path: assets/icons/document.svg
+  String get document => 'assets/icons/document.svg';
+
+  /// File path: assets/icons/dollar-circle.svg
+  String get dollarCircle => 'assets/icons/dollar-circle.svg';
+
+  /// File path: assets/icons/dollar-square.svg
+  String get dollarSquare => 'assets/icons/dollar-square.svg';
+
   /// File path: assets/icons/edit.svg
   String get edit => 'assets/icons/edit.svg';
 
   /// File path: assets/icons/element-3.svg
   String get element3 => 'assets/icons/element-3.svg';
+
+  /// File path: assets/icons/empty-wallet-add.svg
+  String get emptyWalletAdd => 'assets/icons/empty-wallet-add.svg';
+
+  /// File path: assets/icons/empty-wallet-change.svg
+  String get emptyWalletChange => 'assets/icons/empty-wallet-change.svg';
+
+  /// File path: assets/icons/empty-wallet-remove.svg
+  String get emptyWalletRemove => 'assets/icons/empty-wallet-remove.svg';
+
+  /// File path: assets/icons/empty-wallet-tick.svg
+  String get emptyWalletTick => 'assets/icons/empty-wallet-tick.svg';
+
+  /// File path: assets/icons/empty-wallet-time.svg
+  String get emptyWalletTime => 'assets/icons/empty-wallet-time.svg';
+
+  /// File path: assets/icons/empty-wallet.svg
+  String get emptyWallet => 'assets/icons/empty-wallet.svg';
 
   /// File path: assets/icons/export-1.svg
   String get export1 => 'assets/icons/export-1.svg';
@@ -263,11 +344,20 @@ class $AssetsIconsGen {
   /// File path: assets/icons/global.svg
   String get global => 'assets/icons/global.svg';
 
+  /// File path: assets/icons/google-logo.svg
+  String get googleLogo => 'assets/icons/google-logo.svg';
+
   /// File path: assets/icons/gps-slash.svg
   String get gpsSlash => 'assets/icons/gps-slash.svg';
 
   /// File path: assets/icons/gps.svg
   String get gps => 'assets/icons/gps.svg';
+
+  /// File path: assets/icons/group-1.svg
+  String get group1 => 'assets/icons/group-1.svg';
+
+  /// File path: assets/icons/group.svg
+  String get group => 'assets/icons/group.svg';
 
   /// File path: assets/icons/heart.svg
   String get heart => 'assets/icons/heart.svg';
@@ -329,8 +419,50 @@ class $AssetsIconsGen {
   /// File path: assets/icons/map.svg
   String get map => 'assets/icons/map.svg';
 
+  /// File path: assets/icons/math.svg
+  String get math => 'assets/icons/math.svg';
+
   /// File path: assets/icons/menu.svg
   String get menu => 'assets/icons/menu.svg';
+
+  /// File path: assets/icons/money-2.svg
+  String get money2 => 'assets/icons/money-2.svg';
+
+  /// File path: assets/icons/money-3.svg
+  String get money3 => 'assets/icons/money-3.svg';
+
+  /// File path: assets/icons/money-4.svg
+  String get money4 => 'assets/icons/money-4.svg';
+
+  /// File path: assets/icons/money-add.svg
+  String get moneyAdd => 'assets/icons/money-add.svg';
+
+  /// File path: assets/icons/money-change.svg
+  String get moneyChange => 'assets/icons/money-change.svg';
+
+  /// File path: assets/icons/money-forbidden.svg
+  String get moneyForbidden => 'assets/icons/money-forbidden.svg';
+
+  /// File path: assets/icons/money-recive.svg
+  String get moneyRecive => 'assets/icons/money-recive.svg';
+
+  /// File path: assets/icons/money-remove.svg
+  String get moneyRemove => 'assets/icons/money-remove.svg';
+
+  /// File path: assets/icons/money-send.svg
+  String get moneySend => 'assets/icons/money-send.svg';
+
+  /// File path: assets/icons/money-tick.svg
+  String get moneyTick => 'assets/icons/money-tick.svg';
+
+  /// File path: assets/icons/money-time.svg
+  String get moneyTime => 'assets/icons/money-time.svg';
+
+  /// File path: assets/icons/money.svg
+  String get money => 'assets/icons/money.svg';
+
+  /// File path: assets/icons/moneys.svg
+  String get moneys => 'assets/icons/moneys.svg';
 
   /// File path: assets/icons/moon.svg
   String get moon => 'assets/icons/moon.svg';
@@ -350,8 +482,14 @@ class $AssetsIconsGen {
   /// File path: assets/icons/notification.svg
   String get notification => 'assets/icons/notification.svg';
 
+  /// File path: assets/icons/paypal-logo.svg
+  String get paypalLogo => 'assets/icons/paypal-logo.svg';
+
   /// File path: assets/icons/people.svg
   String get people => 'assets/icons/people.svg';
+
+  /// File path: assets/icons/percentage-square.svg
+  String get percentageSquare => 'assets/icons/percentage-square.svg';
 
   /// File path: assets/icons/picture-frame.svg
   String get pictureFrame => 'assets/icons/picture-frame.svg';
@@ -386,8 +524,41 @@ class $AssetsIconsGen {
   /// File path: assets/icons/ranking.svg
   String get ranking => 'assets/icons/ranking.svg';
 
+  /// File path: assets/icons/receipt-1.svg
+  String get receipt1 => 'assets/icons/receipt-1.svg';
+
+  /// File path: assets/icons/receipt-2-1.svg
+  String get receipt21 => 'assets/icons/receipt-2-1.svg';
+
+  /// File path: assets/icons/receipt-2.svg
+  String get receipt2 => 'assets/icons/receipt-2.svg';
+
+  /// File path: assets/icons/receipt-add.svg
+  String get receiptAdd => 'assets/icons/receipt-add.svg';
+
+  /// File path: assets/icons/receipt-discount.svg
+  String get receiptDiscount => 'assets/icons/receipt-discount.svg';
+
+  /// File path: assets/icons/receipt-disscount.svg
+  String get receiptDisscount => 'assets/icons/receipt-disscount.svg';
+
+  /// File path: assets/icons/receipt-edit.svg
+  String get receiptEdit => 'assets/icons/receipt-edit.svg';
+
+  /// File path: assets/icons/receipt-item.svg
+  String get receiptItem => 'assets/icons/receipt-item.svg';
+
+  /// File path: assets/icons/receipt-minus.svg
+  String get receiptMinus => 'assets/icons/receipt-minus.svg';
+
+  /// File path: assets/icons/receipt-search.svg
+  String get receiptSearch => 'assets/icons/receipt-search.svg';
+
   /// File path: assets/icons/receipt-square.svg
   String get receiptSquare => 'assets/icons/receipt-square.svg';
+
+  /// File path: assets/icons/receipt-text.svg
+  String get receiptText => 'assets/icons/receipt-text.svg';
 
   /// File path: assets/icons/receipt.svg
   String get receipt => 'assets/icons/receipt.svg';
@@ -485,6 +656,9 @@ class $AssetsIconsGen {
   /// File path: assets/icons/search-zoom-out.svg
   String get searchZoomOut => 'assets/icons/search-zoom-out.svg';
 
+  /// File path: assets/icons/security-card.svg
+  String get securityCard => 'assets/icons/security-card.svg';
+
   /// File path: assets/icons/send-1.svg
   String get send1 => 'assets/icons/send-1.svg';
 
@@ -545,8 +719,35 @@ class $AssetsIconsGen {
   /// File path: assets/icons/star_filled.svg
   String get starFilled => 'assets/icons/star_filled.svg';
 
+  /// File path: assets/icons/strongbox-2.svg
+  String get strongbox2 => 'assets/icons/strongbox-2.svg';
+
+  /// File path: assets/icons/strongbox.svg
+  String get strongbox => 'assets/icons/strongbox.svg';
+
+  /// File path: assets/icons/tag-2.svg
+  String get tag2 => 'assets/icons/tag-2.svg';
+
   /// File path: assets/icons/tag-user.svg
   String get tagUser => 'assets/icons/tag-user.svg';
+
+  /// File path: assets/icons/tag.svg
+  String get tag => 'assets/icons/tag.svg';
+
+  /// File path: assets/icons/ticket-2.svg
+  String get ticket2 => 'assets/icons/ticket-2.svg';
+
+  /// File path: assets/icons/ticket-discount.svg
+  String get ticketDiscount => 'assets/icons/ticket-discount.svg';
+
+  /// File path: assets/icons/ticket-expired.svg
+  String get ticketExpired => 'assets/icons/ticket-expired.svg';
+
+  /// File path: assets/icons/ticket-star.svg
+  String get ticketStar => 'assets/icons/ticket-star.svg';
+
+  /// File path: assets/icons/ticket.svg
+  String get ticket => 'assets/icons/ticket.svg';
 
   /// File path: assets/icons/toggle-off-circle.svg
   String get toggleOffCircle => 'assets/icons/toggle-off-circle.svg';
@@ -559,6 +760,9 @@ class $AssetsIconsGen {
 
   /// File path: assets/icons/toggle-on.svg
   String get toggleOn => 'assets/icons/toggle-on.svg';
+
+  /// File path: assets/icons/transaction-minus.svg
+  String get transactionMinus => 'assets/icons/transaction-minus.svg';
 
   /// File path: assets/icons/trash.svg
   String get trash => 'assets/icons/trash.svg';
@@ -599,12 +803,47 @@ class $AssetsIconsGen {
   /// File path: assets/icons/user.svg
   String get user => 'assets/icons/user.svg';
 
+  /// File path: assets/icons/wallet-1.svg
+  String get wallet1 => 'assets/icons/wallet-1.svg';
+
+  /// File path: assets/icons/wallet-2.svg
+  String get wallet2 => 'assets/icons/wallet-2.svg';
+
+  /// File path: assets/icons/wallet-3.svg
+  String get wallet3 => 'assets/icons/wallet-3.svg';
+
+  /// File path: assets/icons/wallet-add-1.svg
+  String get walletAdd1 => 'assets/icons/wallet-add-1.svg';
+
+  /// File path: assets/icons/wallet-add.svg
+  String get walletAdd => 'assets/icons/wallet-add.svg';
+
+  /// File path: assets/icons/wallet-check.svg
+  String get walletCheck => 'assets/icons/wallet-check.svg';
+
+  /// File path: assets/icons/wallet-minus.svg
+  String get walletMinus => 'assets/icons/wallet-minus.svg';
+
+  /// File path: assets/icons/wallet-money.svg
+  String get walletMoney => 'assets/icons/wallet-money.svg';
+
+  /// File path: assets/icons/wallet-remove.svg
+  String get walletRemove => 'assets/icons/wallet-remove.svg';
+
+  /// File path: assets/icons/wallet-search.svg
+  String get walletSearch => 'assets/icons/wallet-search.svg';
+
+  /// File path: assets/icons/wallet.svg
+  String get wallet => 'assets/icons/wallet.svg';
+
   /// List of all assets
   List<String> get values => [
+    appleLogo,
     archiveAdd,
     archiveMinus,
     archiveSlash,
     archiveTick,
+    archive,
     arrangeCircle2,
     arrangeCircle,
     arrangeSquare2,
@@ -653,19 +892,44 @@ class $AssetsIconsGen {
     call,
     candle2,
     candle,
+    cardAdd,
+    cardEdit,
     cardPos,
+    cardReceive,
+    cardRemove1,
+    cardRemove,
+    cardSend,
+    cardSlash,
+    cardTick1,
+    cardTick,
+    card,
+    cards,
     category2,
     category,
+    chartSquare,
     clock,
+    coin1,
+    coin,
     convert,
     directDown,
     directLeft,
     directRight,
     directUp,
+    discountCircle,
+    discountShape,
     discover,
     dislike,
+    document,
+    dollarCircle,
+    dollarSquare,
     edit,
     element3,
+    emptyWalletAdd,
+    emptyWalletChange,
+    emptyWalletRemove,
+    emptyWalletTick,
+    emptyWalletTime,
+    emptyWallet,
     export1,
     export2,
     export3,
@@ -684,8 +948,11 @@ class $AssetsIconsGen {
     globalRefresh,
     globalSearch,
     global,
+    googleLogo,
     gpsSlash,
     gps,
+    group1,
+    group,
     heart,
     home2,
     import1,
@@ -706,14 +973,30 @@ class $AssetsIconsGen {
     logout,
     map1,
     map,
+    math,
     menu,
+    money2,
+    money3,
+    money4,
+    moneyAdd,
+    moneyChange,
+    moneyForbidden,
+    moneyRecive,
+    moneyRemove,
+    moneySend,
+    moneyTick,
+    moneyTime,
+    money,
+    moneys,
     moon,
     more2,
     more,
     noteText,
     notificationBing,
     notification,
+    paypalLogo,
     people,
+    percentageSquare,
     pictureFrame,
     profile2user,
     profileAdd,
@@ -725,7 +1008,18 @@ class $AssetsIconsGen {
     radar2,
     radar,
     ranking,
+    receipt1,
+    receipt21,
+    receipt2,
+    receiptAdd,
+    receiptDiscount,
+    receiptDisscount,
+    receiptEdit,
+    receiptItem,
+    receiptMinus,
+    receiptSearch,
     receiptSquare,
+    receiptText,
     receipt,
     receiveSquare2,
     receiveSquare,
@@ -758,6 +1052,7 @@ class $AssetsIconsGen {
     searchZoomIn,
     searchZoomOut1,
     searchZoomOut,
+    securityCard,
     send1,
     send2,
     sendSqaure2,
@@ -778,11 +1073,21 @@ class $AssetsIconsGen {
     starSlash,
     star,
     starFilled,
+    strongbox2,
+    strongbox,
+    tag2,
     tagUser,
+    tag,
+    ticket2,
+    ticketDiscount,
+    ticketExpired,
+    ticketStar,
+    ticket,
     toggleOffCircle,
     toggleOff,
     toggleOnCircle,
     toggleOn,
+    transactionMinus,
     trash,
     undo,
     userAdd,
@@ -796,6 +1101,17 @@ class $AssetsIconsGen {
     userTag,
     userTick,
     user,
+    wallet1,
+    wallet2,
+    wallet3,
+    walletAdd1,
+    walletAdd,
+    walletCheck,
+    walletMinus,
+    walletMoney,
+    walletRemove,
+    walletSearch,
+    wallet,
   ];
 }
 

@@ -8,6 +8,7 @@ import 'package:flutter_sweet_shop_app_ui/core/widgets/app_svg_viewer.dart';
 import 'package:flutter_sweet_shop_app_ui/core/widgets/bordered_container.dart';
 import 'package:flutter_sweet_shop_app_ui/core/widgets/general_app_bar.dart';
 import 'package:flutter_sweet_shop_app_ui/features/cart_feature/presentation/screens/change_address_screen.dart';
+import 'package:flutter_sweet_shop_app_ui/features/cart_feature/presentation/screens/payment_methods_screen.dart';
 import 'package:flutter_sweet_shop_app_ui/features/cart_feature/presentation/widgets/orders_list_for_checkout.dart';
 import 'package:flutter_sweet_shop_app_ui/features/cart_feature/presentation/widgets/payment_details_item.dart';
 
@@ -146,7 +147,9 @@ class ProceedToCheckoutScreen extends StatelessWidget {
           bottom: Dimens.padding,
         ),
         child: AppButton(
-          onPressed: () {},
+          onPressed: () {
+            appPush(context, PaymentMethodsScreen());
+          },
           title: 'Continue To Payment',
           textStyle: appTypography.bodyLarge,
           borderRadius: Dimens.corners,
