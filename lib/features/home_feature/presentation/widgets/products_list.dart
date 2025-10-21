@@ -3,6 +3,7 @@ import 'package:flutter_sweet_shop_app_ui/core/theme/theme.dart';
 import 'package:flutter_sweet_shop_app_ui/core/utils/app_navigator.dart';
 import 'package:flutter_sweet_shop_app_ui/core/widgets/app_title_widget.dart';
 import 'package:flutter_sweet_shop_app_ui/core/widgets/rate_widget.dart';
+import 'package:flutter_sweet_shop_app_ui/features/home_feature/presentation/screens/products_screen.dart';
 
 import '../../../../core/theme/dimens.dart';
 import '../../data/data_source/local/sample_data.dart';
@@ -23,7 +24,9 @@ class ProductsList extends StatelessWidget {
           children: [
             AppTitleWidget(
               title: titleOfTheListOfProducts[index],
-              onPressed: () {},
+              onPressed: () {
+                appPush(context, ProductsScreen());
+              },
             ),
             SizedBox(
               height: 100,

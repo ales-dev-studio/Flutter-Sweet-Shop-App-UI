@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_sweet_shop_app_ui/core/theme/theme.dart';
+import 'package:flutter_sweet_shop_app_ui/core/widgets/shaded_container.dart';
 
 import '../gen/assets.gen.dart';
 import '../theme/dimens.dart';
@@ -11,18 +12,7 @@ class AppSearchBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final colors = context.theme.appColors;
-    return Container(
-      decoration: BoxDecoration(
-        color: Theme.of(context).scaffoldBackgroundColor,
-        borderRadius: BorderRadius.circular(Dimens.largePadding),
-        boxShadow: [
-          BoxShadow(
-            color: colors.black.withValues(alpha: 0.1),
-            blurRadius: 10,
-            offset: Offset(0, 1),
-          ),
-        ],
-      ),
+    return ShadedContainer(
       height: 50,
       child: Padding(
         padding: const EdgeInsets.only(top: Dimens.smallPadding),
