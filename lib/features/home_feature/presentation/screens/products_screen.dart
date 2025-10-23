@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_sweet_shop_app_ui/core/theme/theme.dart';
 import 'package:flutter_sweet_shop_app_ui/core/utils/sized_context.dart';
 import 'package:flutter_sweet_shop_app_ui/core/widgets/app_search_bar.dart';
+import 'package:flutter_sweet_shop_app_ui/core/widgets/app_svg_viewer.dart';
 import 'package:flutter_sweet_shop_app_ui/core/widgets/rate_widget.dart';
 
 import '../../../../core/gen/assets.gen.dart';
@@ -43,16 +44,26 @@ class ProductsScreen extends StatelessWidget {
             children: [
               ShadedContainer(
                 padding: EdgeInsets.all(Dimens.largePadding),
+                borderRadius: 100,
                 child: Row(
+                  spacing: Dimens.padding,
                   mainAxisSize: MainAxisSize.min,
-                  children: [Text('Filters')],
+                  children: [
+                    AppSvgViewer(Assets.icons.filterSearch, width: 16),
+                    Text('Filters'),
+                  ],
                 ),
               ),
               ShadedContainer(
                 padding: EdgeInsets.all(Dimens.largePadding),
+                borderRadius: 100,
                 child: Row(
+                  spacing: Dimens.padding,
                   mainAxisSize: MainAxisSize.min,
-                  children: [Text('Sort')],
+                  children: [
+                    AppSvgViewer(Assets.icons.sort, width: 16),
+                    Text('Sort'),
+                  ],
                 ),
               ),
             ],

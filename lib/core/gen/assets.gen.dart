@@ -314,6 +314,9 @@ class $AssetsIconsGen {
   /// File path: assets/icons/filter-search.svg
   String get filterSearch => 'assets/icons/filter-search.svg';
 
+  /// File path: assets/icons/filter-tick.svg
+  String get filterTick => 'assets/icons/filter-tick.svg';
+
   /// File path: assets/icons/forward-square.svg
   String get forwardSquare => 'assets/icons/forward-square.svg';
 
@@ -707,6 +710,9 @@ class $AssetsIconsGen {
   /// File path: assets/icons/shopping-cart.svg
   String get shoppingCart => 'assets/icons/shopping-cart.svg';
 
+  /// File path: assets/icons/sort.svg
+  String get sort => 'assets/icons/sort.svg';
+
   /// File path: assets/icons/star-1.svg
   String get star1 => 'assets/icons/star-1.svg';
 
@@ -938,6 +944,7 @@ class $AssetsIconsGen {
     filterEdit,
     filterRemove,
     filterSearch,
+    filterTick,
     forwardSquare,
     frame1,
     frame2,
@@ -1069,6 +1076,7 @@ class $AssetsIconsGen {
     shop,
     shoppingBag,
     shoppingCart,
+    sort,
     star1,
     starSlash,
     star,

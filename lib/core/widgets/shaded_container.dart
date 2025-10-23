@@ -38,7 +38,9 @@ class ShadedContainer extends StatelessWidget {
       constraints: constraints,
       decoration: BoxDecoration(
         color: Theme.of(context).scaffoldBackgroundColor,
-        borderRadius: BorderRadius.circular(Dimens.largePadding),
+        borderRadius: BorderRadius.circular(
+          borderRadius ?? Dimens.largePadding,
+        ),
         boxShadow: [
           BoxShadow(
             color: context.theme.appColors.black.withValues(alpha: 0.1),
