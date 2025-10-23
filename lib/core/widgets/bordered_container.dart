@@ -5,6 +5,7 @@ import 'package:flutter_sweet_shop_app_ui/core/theme/theme.dart';
 class BorderedContainer extends StatelessWidget {
   final Widget child;
   final Color? borderColor;
+  final Color? color;
   final EdgeInsetsGeometry? padding;
   final EdgeInsetsGeometry? margin;
   final double? width;
@@ -24,6 +25,7 @@ class BorderedContainer extends StatelessWidget {
     this.alignment,
     this.constraints,
     this.borderRadius,
+    this.color,
   });
 
   @override
@@ -37,6 +39,7 @@ class BorderedContainer extends StatelessWidget {
       alignment: alignment,
       constraints: constraints,
       decoration: BoxDecoration(
+        color: color,
         border: Border.all(color: borderColor ?? context.theme.appColors.gray),
         borderRadius: BorderRadius.circular(borderRadius ?? Dimens.corners),
       ),

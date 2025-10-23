@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_sweet_shop_app_ui/core/theme/theme.dart';
+import 'package:flutter_sweet_shop_app_ui/core/utils/app_navigator.dart';
 import 'package:flutter_sweet_shop_app_ui/core/utils/sized_context.dart';
 import 'package:flutter_sweet_shop_app_ui/core/widgets/app_search_bar.dart';
 import 'package:flutter_sweet_shop_app_ui/core/widgets/app_svg_viewer.dart';
 import 'package:flutter_sweet_shop_app_ui/core/widgets/rate_widget.dart';
+import 'package:flutter_sweet_shop_app_ui/features/home_feature/presentation/screens/sort_and_filter_screen.dart';
 
 import '../../../../core/gen/assets.gen.dart';
 import '../../../../core/theme/dimens.dart';
@@ -42,28 +44,38 @@ class ProductsScreen extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.start,
             spacing: Dimens.largePadding,
             children: [
-              ShadedContainer(
-                padding: EdgeInsets.all(Dimens.largePadding),
-                borderRadius: 100,
-                child: Row(
-                  spacing: Dimens.padding,
-                  mainAxisSize: MainAxisSize.min,
-                  children: [
-                    AppSvgViewer(Assets.icons.filterSearch, width: 16),
-                    Text('Filters'),
-                  ],
+              GestureDetector(
+                onTap: () {
+                  appPush(context, SortAndFilterScreen());
+                },
+                child: ShadedContainer(
+                  padding: EdgeInsets.all(Dimens.largePadding),
+                  borderRadius: 100,
+                  child: Row(
+                    spacing: Dimens.padding,
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      AppSvgViewer(Assets.icons.filterSearch, width: 16),
+                      Text('Filters'),
+                    ],
+                  ),
                 ),
               ),
-              ShadedContainer(
-                padding: EdgeInsets.all(Dimens.largePadding),
-                borderRadius: 100,
-                child: Row(
-                  spacing: Dimens.padding,
-                  mainAxisSize: MainAxisSize.min,
-                  children: [
-                    AppSvgViewer(Assets.icons.sort, width: 16),
-                    Text('Sort'),
-                  ],
+              GestureDetector(
+                onTap: () {
+                  appPush(context, SortAndFilterScreen());
+                },
+                child: ShadedContainer(
+                  padding: EdgeInsets.all(Dimens.largePadding),
+                  borderRadius: 100,
+                  child: Row(
+                    spacing: Dimens.padding,
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      AppSvgViewer(Assets.icons.sort, width: 16),
+                      Text('Sort'),
+                    ],
+                  ),
                 ),
               ),
             ],
