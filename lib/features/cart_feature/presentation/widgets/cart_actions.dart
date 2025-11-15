@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_sweet_shop_app_ui/core/theme/dimens.dart';
 import 'package:flutter_sweet_shop_app_ui/core/theme/theme.dart';
+import 'package:flutter_sweet_shop_app_ui/core/utils/check_theme_status.dart';
 
 import '../../data/models/cart_item_model.dart';
 import '../bloc/cart_cubit.dart';
@@ -31,7 +32,11 @@ class CartActions extends StatelessWidget {
           child: InkWell(
             onTap: () => cartCubit.decrementQuantity(item.product.id),
             borderRadius: BorderRadius.circular(4),
-            child: Icon(Icons.remove, size: 16, color: appColors.white),
+            child: Icon(
+              Icons.remove,
+              size: 16,
+              color: checkDarkMode(context) ? appColors.black : appColors.white,
+            ),
           ),
         ),
         Text(item.quantity.toString(), style: appTypography.bodyLarge),

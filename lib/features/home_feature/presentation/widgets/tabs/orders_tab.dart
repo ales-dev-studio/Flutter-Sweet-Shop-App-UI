@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_sweet_shop_app_ui/core/theme/theme.dart';
+import 'package:flutter_sweet_shop_app_ui/core/utils/check_theme_status.dart';
 import 'package:flutter_sweet_shop_app_ui/core/widgets/app_scaffold.dart';
 import 'package:flutter_sweet_shop_app_ui/core/widgets/general_app_bar.dart';
 
@@ -41,7 +42,8 @@ class _OrdersTabState extends State<OrdersTab>
           dividerColor: appColors.gray,
           labelColor: appColors.primary,
           labelStyle: TextStyle(fontWeight: FontWeight.w600, fontSize: 16),
-          unselectedLabelColor: appColors.black,
+          unselectedLabelColor:
+              checkDarkMode(context) ? appColors.white : appColors.black,
           indicatorColor: appColors.primary,
           tabs: [
             Tab(child: Text('Active')),

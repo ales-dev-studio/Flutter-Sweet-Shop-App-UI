@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:flutter_sweet_shop_app_ui/core/utils/check_theme_status.dart';
 
 class AppSvgViewer extends StatelessWidget {
   const AppSvgViewer(
@@ -24,7 +25,11 @@ class AppSvgViewer extends StatelessWidget {
       width: width,
       height: height,
       colorFilter:
-          color == null ? null : ColorFilter.mode(color!, BlendMode.srcIn),
+          color == null
+              ? checkDarkMode(context)
+                  ? ColorFilter.mode(Colors.white, BlendMode.srcIn)
+                  : null
+              : ColorFilter.mode(color!, BlendMode.srcIn),
       fit: fit ?? BoxFit.contain,
     );
   }

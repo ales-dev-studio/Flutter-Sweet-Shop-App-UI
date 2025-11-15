@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_sweet_shop_app_ui/core/theme/theme.dart';
+import 'package:flutter_sweet_shop_app_ui/core/utils/check_theme_status.dart';
 
 class AppChoiceChip extends StatelessWidget {
   const AppChoiceChip({
@@ -22,7 +23,12 @@ class AppChoiceChip extends StatelessWidget {
       onSelected: onSelected,
       selectedColor: context.theme.appColors.primary,
       showCheckmark: false,
-      labelStyle: TextStyle(color: selected ? Colors.white : Colors.black),
+      labelStyle: TextStyle(
+        color:
+            selected
+                ? Colors.white
+                : (checkDarkMode(context) ? Colors.white : Colors.black),
+      ),
     );
   }
 }

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_sweet_shop_app_ui/core/theme/dimens.dart';
 import 'package:flutter_sweet_shop_app_ui/core/theme/theme.dart';
+import 'package:flutter_sweet_shop_app_ui/core/utils/check_theme_status.dart';
 
 class BorderedContainer extends StatelessWidget {
   final Widget child;
@@ -40,7 +41,13 @@ class BorderedContainer extends StatelessWidget {
       constraints: constraints,
       decoration: BoxDecoration(
         color: color,
-        border: Border.all(color: borderColor ?? context.theme.appColors.gray),
+        border: Border.all(
+          color:
+              borderColor ??
+              (checkDarkMode(context)
+                  ? context.theme.appColors.gray.withValues(alpha: 0.2)
+                  : context.theme.appColors.gray),
+        ),
         borderRadius: BorderRadius.circular(borderRadius ?? Dimens.corners),
       ),
       child: child,

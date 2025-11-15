@@ -94,10 +94,55 @@ class AppTheme {
   //
   // Dark theme
   //
-  static final dark = ThemeData(
-    fontFamily: GoogleFonts.montserrat().fontFamily,
-  ).copyWith(
+  static final dark = ThemeData.dark().copyWith(
     extensions: [appColors, AppTypography.typography],
+    textTheme: TextTheme(
+      bodyLarge: AppTypography.typography.bodyLarge.copyWith(
+        color: Colors.white,
+      ),
+      bodyMedium: AppTypography.typography.bodyMedium.copyWith(
+        color: Colors.white,
+      ),
+      bodySmall: AppTypography.typography.bodySmall.copyWith(
+        color: Colors.white,
+      ),
+      displayLarge: AppTypography.typography.displayLarge.copyWith(
+        color: Colors.white,
+      ),
+      displayMedium: AppTypography.typography.displayMedium.copyWith(
+        color: Colors.white,
+      ),
+      displaySmall: AppTypography.typography.displaySmall.copyWith(
+        color: Colors.white,
+      ),
+      labelLarge: AppTypography.typography.labelLarge.copyWith(
+        color: Colors.white,
+      ),
+      labelMedium: AppTypography.typography.labelMedium.copyWith(
+        color: Colors.white,
+      ),
+      labelSmall: AppTypography.typography.labelSmall.copyWith(
+        color: Colors.white,
+      ),
+      headlineLarge: AppTypography.typography.headlineLarge.copyWith(
+        color: Colors.white,
+      ),
+      headlineMedium: AppTypography.typography.headlineMedium.copyWith(
+        color: Colors.white,
+      ),
+      headlineSmall: AppTypography.typography.headlineSmall.copyWith(
+        color: Colors.white,
+      ),
+      titleLarge: AppTypography.typography.titleLarge.copyWith(
+        color: Colors.white,
+      ),
+      titleMedium: AppTypography.typography.titleMedium.copyWith(
+        color: Colors.white,
+      ),
+      titleSmall: AppTypography.typography.titleSmall.copyWith(
+        color: Colors.white,
+      ),
+    ),
     colorScheme: ColorScheme.fromSeed(
       seedColor: appColors.primary,
       brightness: Brightness.dark,
@@ -113,12 +158,12 @@ class AppTheme {
     navigationBarTheme: NavigationBarThemeData(
       backgroundColor: appColors.black,
       labelTextStyle: WidgetStateProperty.resolveWith((
-          Set<WidgetState> states,
-          ) {
+        Set<WidgetState> states,
+      ) {
         final Color color =
-        states.contains(WidgetState.selected)
-            ? appColors.primary
-            : appColors.white;
+            states.contains(WidgetState.selected)
+                ? appColors.primary
+                : appColors.white;
         return TextStyle(
           color: color,
           fontWeight: FontWeight.w600,
@@ -128,7 +173,6 @@ class AppTheme {
     ),
     scaffoldBackgroundColor: appColors.black,
   );
-  
 }
 
 extension ColorThemeExtension on ThemeData {

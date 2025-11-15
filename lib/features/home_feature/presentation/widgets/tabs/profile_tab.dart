@@ -37,14 +37,20 @@ class ProfileTab extends StatelessWidget {
                   child: Text(
                     'VanessaLennox@gmail.com',
                     style: appTypography.bodySmall.copyWith(
-                      color: appColors.gray4,
+                      color:
+                          checkDarkMode(context)
+                              ? appColors.white
+                              : appColors.gray4,
                     ),
                   ),
                 ),
                 trailing: AppSvgViewer(
                   Assets.icons.edit,
                   width: 19,
-                  color: appColors.gray4,
+                  color:
+                      checkDarkMode(context)
+                          ? appColors.white
+                          : appColors.gray4,
                 ),
               ),
             ),

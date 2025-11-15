@@ -34,7 +34,7 @@ class StoresOnMapScreen extends StatelessWidget {
             width: 266,
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(Dimens.corners),
-              color: appColors.white,
+              color: Theme.of(context).scaffoldBackgroundColor,
             ),
             margin: EdgeInsets.only(left: Dimens.largePadding),
             child: Column(
@@ -73,10 +73,7 @@ class StoresOnMapScreen extends StatelessWidget {
                         ],
                       ),
                       SizedBox.shrink(),
-                      AppDivider(
-                        indent: Dimens.padding,
-                        endIndent: Dimens.padding,
-                      ),
+                      AppDivider(),
                       Row(
                         spacing: Dimens.padding,
                         children: [

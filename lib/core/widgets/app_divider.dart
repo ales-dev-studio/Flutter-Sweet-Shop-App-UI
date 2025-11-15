@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_sweet_shop_app_ui/core/theme/theme.dart';
+import 'package:flutter_sweet_shop_app_ui/core/utils/check_theme_status.dart';
 
 class AppDivider extends StatelessWidget {
   const AppDivider({
@@ -19,7 +20,10 @@ class AppDivider extends StatelessWidget {
   Widget build(BuildContext context) {
     return Divider(
       height: height ?? 0,
-      color: context.theme.appColors.gray,
+      color:
+          checkDarkMode(context)
+              ? context.theme.appColors.gray4.withValues(alpha: 0.3)
+              : context.theme.appColors.gray,
       thickness: thickness,
       indent: indent,
       endIndent: endIndent,

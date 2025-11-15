@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_sweet_shop_app_ui/core/theme/theme.dart';
+import 'package:flutter_sweet_shop_app_ui/core/widgets/app_divider.dart';
 
 import '../../../../core/theme/dimens.dart';
 import '../../../../core/widgets/app_button.dart';
@@ -75,17 +76,17 @@ class OrdersListWidget extends StatelessWidget {
                           height: 32,
                           child: AppButton(
                             title:
-                            orderType == OrderType.active
-                                ? 'Track order'
-                                : orderType == OrderType.completed
-                                ? 'Delivered'
-                                : 'Order again',
+                                orderType == OrderType.active
+                                    ? 'Track order'
+                                    : orderType == OrderType.completed
+                                    ? 'Delivered'
+                                    : 'Order again',
                             color:
-                            orderType == OrderType.active
-                                ? appColors.primary
-                                : orderType == OrderType.completed
-                                ? appColors.successLight
-                                : appColors.error,
+                                orderType == OrderType.active
+                                    ? appColors.primary
+                                    : orderType == OrderType.completed
+                                    ? appColors.successLight
+                                    : appColors.error,
                             margin: EdgeInsets.zero,
                             padding: WidgetStateProperty.all<EdgeInsets>(
                               EdgeInsets.symmetric(horizontal: Dimens.padding),
@@ -94,7 +95,7 @@ class OrdersListWidget extends StatelessWidget {
                           ),
                         ),
                       ],
-                    )
+                    ),
                   ],
                 ),
               ),
@@ -103,7 +104,7 @@ class OrdersListWidget extends StatelessWidget {
         );
       },
       separatorBuilder: (final context, final index) {
-        return Divider(height: 0, color: appColors.gray);
+        return AppDivider(height: 0);
       },
     );
   }
