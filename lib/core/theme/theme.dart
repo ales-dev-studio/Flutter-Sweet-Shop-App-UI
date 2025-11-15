@@ -10,28 +10,28 @@ class AppTheme {
   static final light = ThemeData(
     fontFamily: GoogleFonts.montserrat().fontFamily,
   ).copyWith(
-    extensions: [_lightAppColors, AppTypography.light],
+    extensions: [appColors, AppTypography.typography],
     colorScheme: ColorScheme.fromSeed(
-      seedColor: _lightAppColors.primary,
+      seedColor: appColors.primary,
       brightness: Brightness.light,
     ),
     appBarTheme: AppBarTheme(
-      backgroundColor: _lightAppColors.white,
-      titleTextStyle: AppTypography.light.bodyLarge.copyWith(
-        color: _lightAppColors.black,
+      backgroundColor: appColors.white,
+      titleTextStyle: AppTypography.typography.bodyLarge.copyWith(
+        color: appColors.black,
         fontSize: 17,
       ),
       surfaceTintColor: Colors.transparent,
     ),
     navigationBarTheme: NavigationBarThemeData(
-      backgroundColor: _lightAppColors.white,
+      backgroundColor: appColors.white,
       labelTextStyle: WidgetStateProperty.resolveWith((
         Set<WidgetState> states,
       ) {
         final Color color =
             states.contains(WidgetState.selected)
-                ? _lightAppColors.primary
-                : _lightAppColors.black;
+                ? appColors.primary
+                : appColors.black;
         return TextStyle(
           color: color,
           fontWeight: FontWeight.w600,
@@ -39,10 +39,10 @@ class AppTheme {
         );
       }),
     ),
-    scaffoldBackgroundColor: _lightAppColors.white,
+    scaffoldBackgroundColor: appColors.white,
   );
 
-  static const _lightAppColors = AppColors(
+  static const appColors = AppColors(
     // Primary
     primary: Color(0xFFFB5650),
     primaryShade1: Color(0xFFFEDDDC),
@@ -94,12 +94,41 @@ class AppTheme {
   //
   // Dark theme
   //
-  static final dark = ThemeData.dark().copyWith(
-    extensions: [_darkAppColors, AppTypography.dark],
+  static final dark = ThemeData(
+    fontFamily: GoogleFonts.montserrat().fontFamily,
+  ).copyWith(
+    extensions: [appColors, AppTypography.typography],
+    colorScheme: ColorScheme.fromSeed(
+      seedColor: appColors.primary,
+      brightness: Brightness.dark,
+    ),
+    appBarTheme: AppBarTheme(
+      backgroundColor: appColors.black,
+      titleTextStyle: AppTypography.typography.bodyLarge.copyWith(
+        color: appColors.white,
+        fontSize: 17,
+      ),
+      surfaceTintColor: Colors.transparent,
+    ),
+    navigationBarTheme: NavigationBarThemeData(
+      backgroundColor: appColors.black,
+      labelTextStyle: WidgetStateProperty.resolveWith((
+          Set<WidgetState> states,
+          ) {
+        final Color color =
+        states.contains(WidgetState.selected)
+            ? appColors.primary
+            : appColors.white;
+        return TextStyle(
+          color: color,
+          fontWeight: FontWeight.w600,
+          fontSize: 12,
+        );
+      }),
+    ),
+    scaffoldBackgroundColor: appColors.black,
   );
-
-  // Dark theme will be implemented later
-  static const _darkAppColors = _lightAppColors;
+  
 }
 
 extension ColorThemeExtension on ThemeData {

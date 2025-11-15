@@ -4,14 +4,30 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_sweet_shop_app_ui/features/cart_feature/data/data_source/local/fake_products.dart';
 import 'package:flutter_sweet_shop_app_ui/features/cart_feature/presentation/bloc/cart_cubit.dart';
 import 'core/theme/theme.dart';
+import 'features/home_feature/presentation/bloc/theme_cubit.dart';
 import 'features/home_feature/presentation/screens/splash_screen.dart';
 
 void main() {
-  runApp(const App());
+  WidgetsFlutterBinding.ensureInitialized();
+
+  runApp(
+    MultiBlocProvider(
+      providers: [
+        BlocProvider(create: (final BuildContext context) => ThemeCubit()),
+      ],
+      child: BlocBuilder<ThemeCubit, ThemeMode?>(
+        builder: (final BuildContext context, final ThemeMode? themeMode) {
+          return App(themeMode: themeMode);
+        },
+      ),
+    ),
+  );
 }
 
 class App extends StatelessWidget {
-  const App({super.key});
+  const App({super.key, this.themeMode});
+
+  final ThemeMode? themeMode;
 
   @override
   Widget build(BuildContext context) {
@@ -29,7 +45,7 @@ class App extends StatelessWidget {
         debugShowCheckedModeBanner: false,
         theme: AppTheme.light,
         darkTheme: AppTheme.dark,
-        themeMode: ThemeMode.light,
+        themeMode: themeMode,
         home: SplashScreen(),
       ),
     );

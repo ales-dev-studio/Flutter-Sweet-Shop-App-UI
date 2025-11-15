@@ -1,6 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_sweet_shop_app_ui/core/theme/theme.dart';
+import 'package:flutter_sweet_shop_app_ui/core/utils/check_theme_status.dart';
 import 'package:flutter_sweet_shop_app_ui/core/widgets/app_scaffold.dart';
 import 'package:flutter_sweet_shop_app_ui/core/widgets/bordered_container.dart';
 import 'package:flutter_sweet_shop_app_ui/core/widgets/general_app_bar.dart';
@@ -10,6 +12,7 @@ import '../../../../../core/theme/dimens.dart';
 import '../../../../../core/widgets/app_list_tile.dart';
 import '../../../../../core/widgets/app_svg_viewer.dart';
 import '../../../../../core/widgets/user_profile_image_widget.dart';
+import '../../bloc/theme_cubit.dart';
 
 class ProfileTab extends StatelessWidget {
   const ProfileTab({super.key});
@@ -80,6 +83,24 @@ class ProfileTab extends StatelessWidget {
                       child: CupertinoSwitch(
                         value: true,
                         onChanged: (final value) {},
+                        activeTrackColor: appColors.primary,
+                      ),
+                    ),
+                    padding: EdgeInsets.zero,
+                  ),
+                  AppListTile(
+                    onTap: () {
+                      context.read<ThemeCubit>().toggleTheme();
+                    },
+                    title: 'Dark theme',
+                    leadingIconPath: Assets.icons.moon,
+                    trailing: Transform.scale(
+                      scale: 0.7,
+                      child: CupertinoSwitch(
+                        value: checkDarkMode(context),
+                        onChanged: (final value) {
+                          context.read<ThemeCubit>().toggleTheme();
+                        },
                         activeTrackColor: appColors.primary,
                       ),
                     ),
